@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>第三章：借贷记账法</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Microsoft YaHei", Arial;
+    }
+
+    body {
+      background: #f9fafb;
+      color: #111;
+      line-height: 1.8;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1000px;
+      margin: 40px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      border: 1px solid #eee;
+    }
+
+    h1 {
+      color: #1e3a8a;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      margin-top: 25px;
+      margin-bottom: 10px;
+      color: #1e3a8a;
+    }
+
+    p {
+      margin-bottom: 10px;
+    }
+
+    ul {
+      margin-left: 20px;
+      margin-bottom: 15px;
+    }
+
+    li {
+      margin-bottom: 6px;
+    }
+
+    .box {
+      background: #f1f5f9;
+      padding: 15px;
+      border-left: 4px solid #1e3a8a;
+      border-radius: 8px;
+      margin: 15px 0;
+    }
+
+    .highlight {
+      font-weight: bold;
+      color: #1e3a8a;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 15px;
+    }
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: left;
+    }
+
+    th {
+      background: #1e3a8a;
+      color: white;
+    }
+
+    .quiz {
+      margin-top: 30px;
+      padding: 20px;
+      background: #f9fafb;
+      border-radius: 10px;
+      border: 1px solid #eee;
+    }
+
+    button {
+      margin-top: 10px;
+      padding: 10px 15px;
+      background: #1e3a8a;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background: #16306e;
+    }
+
+    .answer {
+      display: none;
+      margin-top: 10px;
+      padding: 10px;
+      background: #e8f0ff;
+      border-left: 4px solid #1e3a8a;
+      border-radius: 6px;
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <h1>第三章：借贷记账法</h1>
+  <p>本章学习借方（Debit）与贷方（Credit）的基本规则，以及如何编制会计分录。</p>
+
+  <h2>一、什么是借贷记账法？</h2>
+
+  <p>
+    借贷记账法是一种记录每一笔交易的方法，每一笔交易都会同时影响两个或以上的账户，并保持平衡。
+  </p>
+
+  <div class="box">
+    <span class="highlight">核心原则：</span><br>
+    每一笔交易：借 = 贷
+  </div>
+
+  <h2>二、借方（Debit）与贷方（Credit）</h2>
+
+  <table>
+    <tr>
+      <th>项目</th>
+      <th>借方（Debit）</th>
+      <th>贷方（Credit）</th>
+    </tr>
+    <tr>
+      <td>资产</td>
+      <td>增加</td>
+      <td>减少</td>
+    </tr>
+    <tr>
+      <td>负债</td>
+      <td>减少</td>
+      <td>增加</td>
+    </tr>
+    <tr>
+      <td>权益</td>
+      <td>减少</td>
+      <td>增加</td>
+    </tr>
+    <tr>
+      <td>收入</td>
+      <td>减少</td>
+      <td>增加</td>
+    </tr>
+    <tr>
+      <td>费用</td>
+      <td>增加</td>
+      <td>减少</td>
+    </tr>
+  </table>
+
+  <div class="box">
+    <span class="highlight">记忆方法：</span><br>
+    资产、费用 → 借增加<br>
+    负债、权益、收入 → 贷增加
+  </div>
+
+  <h2>三、T账户（T-Account）</h2>
+
+  <p>T账户用于表示每个账户的借贷情况：</p>
+
+  <div class="box">
+<pre>
+        借 (Debit) | 贷 (Credit)
+        -------------------------
+            左       |     右
+</pre>
+  </div>
+
+  <ul>
+    <li>左边 = 借方</li>
+    <li>右边 = 贷方</li>
+  </ul>
+
+  <h2>四、会计分录（Journal Entry）</h2>
+
+  <p>会计分录是用来记录交易的标准格式。</p>
+
+  <div class="box">
+    <span class="highlight">格式：</span><br><br>
+    借：账户名称<br>
+    贷：账户名称
+  </div>
+
+  <h3>例子：</h3>
+  <p>公司用现金购买设备 RM1,000</p>
+
+  <div class="box">
+    借：设备 RM1,000<br>
+    贷：现金 RM1,000
+  </div>
+
+  <p>
+    👉 解释：设备增加（借），现金减少（贷）
+  </p>
+
+  <h2>五、借贷记账的原则总结</h2>
+
+  <ul>
+    <li>每一笔交易必须有借和贷</li>
+    <li>借方总额 = 贷方总额</li>
+    <li>至少影响两个账户</li>
+  </ul>
+
+  <div class="box">
+    <span class="highlight">关键理解：</span><br>
+    借贷不是“加减”，而是“方向”
+  </div>
+
+  <div class="quiz">
+    <h2>📝 小练习</h2>
+
+    <p><strong>问题：</strong>公司用现金支付工资 RM500，应如何分录？</p>
+
+    <button onclick="toggleAnswer()">显示答案</button>
+
+    <div class="answer" id="answer">
+      借：工资费用 RM500<br>
+      贷：现金 RM500
+    </div>
+  </div>
+
+</div>
+
+<script>
+  function toggleAnswer() {
+    const ans = document.getElementById("answer");
+    ans.style.display = (ans.style.display === "block") ? "none" : "block";
+  }
+</script>
+
+</body>
+</html>

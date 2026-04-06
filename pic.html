@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>图解说明：会计概念</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Microsoft YaHei", Arial;
+    }
+
+    body {
+      background: #f9fafb;
+      color: #111;
+      line-height: 1.8;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1000px;
+      margin: 40px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      border: 1px solid #eee;
+    }
+
+    h1 {
+      color: #1e3a8a;
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      margin-top: 25px;
+      margin-bottom: 10px;
+      color: #1e3a8a;
+    }
+
+    .box {
+      background: #f1f5f9;
+      padding: 15px;
+      border-left: 4px solid #1e3a8a;
+      border-radius: 8px;
+      margin: 15px 0;
+    }
+
+    .diagram {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+
+    .card {
+      width: 280px;
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 10px;
+      padding: 15px;
+      margin: 10px;
+      text-align: center;
+    }
+
+    .arrow {
+      font-size: 24px;
+      margin: 10px 0;
+    }
+
+    .title {
+      font-weight: bold;
+      color: #1e3a8a;
+      margin-bottom: 8px;
+    }
+
+    .formula {
+      font-size: 18px;
+      font-weight: bold;
+      background: #e8f0ff;
+      padding: 10px;
+      border-radius: 8px;
+      margin-top: 10px;
+    }
+
+    ul {
+      margin-left: 20px;
+    }
+
+  </style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <h1>📊 图解说明：会计核心概念</h1>
+  <p>通过图表帮助你更直观理解复杂的会计概念。</p>
+
+  <h2>🟦 1. 会计基本流程图</h2>
+
+  <div class="box">
+    <div class="diagram">
+
+      <div class="card">
+        <div class="title">交易</div>
+        <p>发生经济活动</p>
+      </div>
+
+      <div class="arrow">⬇️</div>
+
+      <div class="card">
+        <div class="title">分录</div>
+        <p>记录借贷</p>
+      </div>
+
+      <div class="arrow">⬇️</div>
+
+      <div class="card">
+        <div class="title">分类账</div>
+        <p>账户整理</p>
+      </div>
+
+      <div class="arrow">⬇️</div>
+
+      <div class="card">
+        <div class="title">试算表</div>
+        <p>检查平衡</p>
+      </div>
+
+      <div class="arrow">⬇️</div>
+
+      <div class="card">
+        <div class="title">财务报表</div>
+        <p>结果呈现</p>
+      </div>
+
+    </div>
+  </div>
+
+  <h2>🟦 2. 会计等式图解</h2>
+
+  <div class="box">
+    <div class="diagram">
+
+      <div class="card">
+        <div class="title">资产</div>
+        <p>公司拥有</p>
+      </div>
+
+      <div class="arrow">=</div>
+
+      <div class="card">
+        <div class="title">负债</div>
+        <p>对外欠款</p>
+      </div>
+
+      <div class="arrow">+</div>
+
+      <div class="card">
+        <div class="title">权益</div>
+        <p>老板的部分</p>
+      </div>
+
+    </div>
+
+    <div class="formula">
+      资产 = 负债 + 权益
+    </div>
+  </div>
+
+  <h2>🟦 3. 借贷规则图解</h2>
+
+  <div class="box">
+    <div class="diagram">
+
+      <div class="card">
+        <div class="title">借方（Debit）</div>
+        <ul>
+          <li>资产 ↑</li>
+          <li>费用 ↑</li>
+          <li>负债 ↓</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <div class="title">贷方（Credit）</div>
+        <ul>
+          <li>资产 ↓</li>
+          <li>收入 ↑</li>
+          <li>负债 ↑</li>
+          <li>权益 ↑</li>
+        </ul>
+      </div>
+
+    </div>
+
+    <div class="formula">
+      借 = 贷（永远平衡）
+    </div>
+  </div>
+
+  <h2>🟦 4. T账户结构图</h2>
+
+  <div class="box">
+<pre>
+          借 (Debit)        |        贷 (Credit)
+        ---------------------|---------------------
+              左             |           右
+        (增加资产/费用)      |   (增加负债/收入/权益)
+</pre>
+  </div>
+
+  <h2>🟦 5. 分录到分类账流程图</h2>
+
+  <div class="box">
+    <div class="diagram">
+
+      <div class="card">
+        <div class="title">分录</div>
+        <p>记录交易</p>
+      </div>
+
+      <div class="arrow">➡️</div>
+
+      <div class="card">
+        <div class="title">过账</div>
+        <p>转入分类账</p>
+      </div>
+
+      <div class="arrow">➡️</div>
+
+      <div class="card">
+        <div class="title">分类账</div>
+        <p>账户整理</p>
+      </div>
+
+    </div>
+  </div>
+
+  <h2>🎯 总结</h2>
+  <div class="box">
+    <ul>
+      <li>会计是一个流程系统</li>
+      <li>核心基础：会计等式</li>
+      <li>借贷必须平衡</li>
+      <li>图解能帮助理解账户之间关系</li>
+    </ul>
+  </div>
+
+</div>
+
+</body>
+</html>
